@@ -1,12 +1,17 @@
 {
   "name": "roll-dice-core",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A dice rolling engine.",
-  "main": "index.js",
+  "main": "src/dice-roller.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha ./tests"
   },
   "author": "Robert Dennis <rdennis.dev@gmail.com>",
   "license": "MIT",
-  "private": true
+  "private": true,
+  "devDependencies": {
+    "chai": "*",
+    "mocha": "*"
+  },
+  "dependencies": {}
 }
