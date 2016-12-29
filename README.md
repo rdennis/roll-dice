@@ -5,7 +5,9 @@ A dice rolling engine.
 
 ## Usage
 
-There are two ways to roll dice. You can use the standard dice format (ex. `d20`), or union syntax (ex. `[cat|dog|fish]`);
+There are two ways to roll dice.
+* standard dice format: `d20`, `2d8+2`
+* union syntax: `[cat|dog|fish]`, `[ red | green | blue ]`, `[thing one|thing two|thing three]`
 
 ```js
 let DiceRoller = require('dice-roller');
@@ -21,6 +23,9 @@ diceRoller.roll('2d8');
 
 diceRoller.roll('[cat|dog|fish]');
 // {"result":"dog","faces":["cat","dog","fish"]}
+
+diceRoller.roll('[thing one|thing two|thing three]');
+// {"result":"thing two","faces":["thing one","thing two","thing three"]}
 
 diceRoller.roll('10d4+2');
 /*
