@@ -11,6 +11,7 @@
   "private": true,
   "devDependencies": {
     "chai": "*",
+    "colors": "^1.1.2",
     "mocha": "*"
   },
   "dependencies": {}
