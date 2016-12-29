@@ -46,7 +46,7 @@ let rollFaces = (input) => {
     }
 
     let faces = faceMatch[1].split('|').map(face => face.trim());
-    let faceIndex = getFaceIndex(faces.length - 1);
+    let faceIndex = getFaceIndex(faces.length);
     let result = faces[faceIndex - 1].trim();
 
     return {
