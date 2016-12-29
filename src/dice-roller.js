@@ -1,7 +1,7 @@
 // src/dice-roller.js
 'use strict';
 
-const facesMatcher = /^(?:\[(\s*(?:\w+\s*)+(?:\s*\|\s*(?:\w+\s*)+)+\s*)\])$/;
+const facesMatcher = /^(?:\[(\s*(?:[^|[\]]+\s*)+(?:\s*\|\s*(?:[^|[\]]+\s*)+)+\s*)\])$/;
 const diceMatcher = /^(?:(\d*)d(\d+|%)([+-]\d+)?)$/;
 
 /* private helpers */
