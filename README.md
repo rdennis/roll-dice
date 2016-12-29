@@ -1,2 +1,2 @@
-# roll-dice-core
+# roll-dice
 A dice rolling engine.
