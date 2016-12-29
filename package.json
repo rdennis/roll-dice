@@ -4,7 +4,8 @@
   "description": "A dice rolling engine.",
   "main": "src/dice-roller.js",
   "scripts": {
-    "test": "mocha ./tests"
+    "test": "mocha ./tests",
+    "sample": "node ./sample.js"
   },
   "author": "Robert Dennis <rdennis.dev@gmail.com>",
   "repository": {
