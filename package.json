@@ -5,7 +5,8 @@
   "main": "src/dice-roller.js",
   "scripts": {
     "test": "mocha ./tests",
-    "sample": "node ./sample.js"
+    "sample": "node ./sample.js",
+    "prepublish": "npm test"
   },
   "author": "Robert Dennis <rdennis.dev@gmail.com>",
   "repository": {
