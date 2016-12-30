@@ -20,10 +20,21 @@ describe('DiceRoller - <invalid> format', () => {
         'dG',
         '10dT',
         '[ some face ]',
-        'd2O'
+        'd2O', // uppercase 'o'
+        '[ | ]',
+        '[ | | ]',
+        '[]',
+        '[a|',
+        '[ ]',
+        '[a]',
+        '[ a ]',
+        '[||||]',
+        '[  |   |     |]',
+        '[ | | | ]',
+        '[             |   ]',
     ];
 
-    for(let i = 0, l = tests.length; i < l; i++) {
+    for (let i = 0, l = tests.length; i < l; i++) {
         let test = tests[i];
 
         it(`roll("${test}") should return an invalid object with the provided string if an invalid string is passed in`, () => {
