@@ -1,5 +1,7 @@
 # roll-dice
 
+[![Build Status](https://travis-ci.org/rdennis/roll-dice.svg?branch=master)](https://travis-ci.org/rdennis/roll-dice)
+
 A dice rolling engine.
 
 
