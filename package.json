@@ -6,7 +6,8 @@
   "scripts": {
     "test": "mocha ./tests",
     "sample": "node ./sample.js",
-    "prepublish": "npm test"
+    "prepublish": "npm test",
+    "preversion": "npm test"
   },
   "author": "Robert Dennis <rdennis.dev@gmail.com>",
   "repository": {
