@@ -39,3 +39,8 @@ diceRoller.roll('10d4+2');
 } 
 */
 ```
+
+## 1.0 Roadmap
+- [x] Allow for custom parsers
+- [ ] Documentation :poop:
+- [ ] I don't know, something AMAZING <sub><sup>I guess...</sup></sub>
