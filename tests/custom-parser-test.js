@@ -4,7 +4,7 @@
 let chai = require('chai');
 let expect = chai.expect;
 let DiceRoller = require('./../src/dice-roller');
-let RollUtil = require('./../src/roll-util');
+let RollUtil = DiceRoller.RollUtil;
 
 describe('Custom Parser', () => {
     let customMatcher = /^(\d+)$/;

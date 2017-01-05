@@ -40,6 +40,49 @@ diceRoller.roll('10d4+2');
 */
 ```
 
+## Custom Parsers
+As of v0.2, the parser list can be manipulated to add, remove, or reorder parsers. A parser is a simple function that takes a string input and returns either a `DiceRoller.InvalidInputError` object, or a result object.
+
+Here's an example that uses a simple digit string to roll dice.
+
+```js
+let DiceRoller = require('roll-dice');
+let RollUtil = DiceRoller.RollUtil;
+
+let customMatcher = /^(\d+)$/;
+
+let customParser = (input) => {
+    let match = customMatcher.exec(input);
+
+    if(match === null) {
+        return new DiceRoller.InvalidInputError(input);
+    }
+
+    let faces = parseInt(match[1], 10);
+        
+    if(faces < 2) {
+        return new DiceRoller.InvalidInputError(input);
+    }
+
+    let result = RollUtil.getRandomInt(1, faces);
+
+    return {
+        result,
+        faces
+    };
+};
+
+let diceRoller = new DiceRoller();
+
+let result = diceRoller.roll('20');
+// InvalidInputError
+
+diceRoller.parsers.push(customParser);
+
+result = diceRoller.roll('20');
+// {"result":5,"faces":20}
+```
+
 ## 1.0 Roadmap
 - [x] Allow for custom parsers
 - [ ] Documentation :poop:

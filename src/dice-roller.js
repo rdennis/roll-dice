@@ -2,6 +2,7 @@
 'use strict';
 
 let InvalidInputError = require('./invalid-input-error');
+let RollUtil = require('./roll-util');
 let StandardParser = require('./parsers/standard-parser');
 let FaceParser = require('./parsers/face-parser');
 
@@ -30,3 +31,4 @@ class DiceRoller {
 
 module.exports = DiceRoller;
 module.exports.InvalidInputError = InvalidInputError;
+module.exports.RollUtil = RollUtil;
