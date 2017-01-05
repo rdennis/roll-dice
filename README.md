@@ -8,7 +8,7 @@ A dice rolling engine.
 ## Usage
 
 There are two ways to roll dice.
-* standard dice format: `d20`, `2d8+2`
+* standard dice format: `d20`, `2d8+2`, `d%`
 * union syntax: `[cat|dog|fish]`, `[ red | green | blue ]`, `[thing one|thing two|thing three]`
 
 ```js
