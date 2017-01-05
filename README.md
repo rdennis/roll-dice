@@ -85,5 +85,7 @@ result = diceRoller.roll('20');
 
 ## 1.0 Roadmap
 - [x] Allow for custom parsers
+- [ ] Standardized result contract?
+  - Probably something like `{ result: any, roll: fn }` where `roll()` will return another result set using the same input
 - [ ] Documentation :poop:
 - [ ] I don't know, something AMAZING <sub><sup>I guess...</sup></sub>
