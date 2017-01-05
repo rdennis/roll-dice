@@ -37,6 +37,11 @@ describe('Custom Parser', () => {
             .and.to.contain(customPerser);
     });
 
+    it('roll("20") should fail without the custom parser', () => {
+        let diceRoller = new DiceRoller();
+        expect(diceRoller.roll('20')).to.be.an.instanceof(DiceRoller.InvalidInputError);
+    });
+
     it('roll("20") should use the custom parser', () => {
         let diceRoller = new DiceRoller();
         diceRoller.parsers.push(customPerser);
