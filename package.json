@@ -1,6 +1,6 @@
 {
   "name": "roll-dice",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "A dice rolling engine.",
   "main": "src/dice-roller.js",
   "scripts": {
@@ -23,6 +23,11 @@
   },
   "dependencies": {},
   "keywords": [
-    "dice", "roll", "rpg", "random", "chance", "d20"
+    "dice",
+    "roll",
+    "rpg",
+    "random",
+    "chance",
+    "d20"
   ]
 }
