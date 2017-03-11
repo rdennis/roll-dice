@@ -9,6 +9,9 @@
     "prepublish": "npm test",
     "preversion": "npm test"
   },
+  "bin": {
+    "roll": "bin/roll.js"
+  },
   "author": "Robert Dennis <rdennis.dev@gmail.com>",
   "repository": {
     "type": "git",
